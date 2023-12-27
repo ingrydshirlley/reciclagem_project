@@ -13,6 +13,13 @@
 </head>
 
 <body>
+    <script>
+        function abrirNovaPagina() {
+            // Abre a nova página HTML quando o botão é clicado
+            window.location.href = '../pages/perfil.html';
+        }
+    </script>
+
     <div class="background-container">
         <img src="./images/background.png" alt="imagem de fundo com reciclagem">
     </div>
@@ -37,7 +44,7 @@
         </div>
 
         <div class="box-container-button">
-            <button>Entrar</button>
+            <button onclick="abrirNovaPagina()">Entrar</button>
         </div>
     </div>
 </body>
