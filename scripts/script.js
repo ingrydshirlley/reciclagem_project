@@ -32,7 +32,7 @@ function redirecionarParaPaginaPerfil(nome, arroba, imagem) {
     // Redirecionar para a página do perfil
     window.location.href = '../pages/perfil.html';
 
-    // Definir informações do perfil na sessão local (ou cookies, dependendo da sua lógica)
+    // Definir informações do perfil na sessão local
     sessionStorage.setItem('nomeUsuario', nome);
     sessionStorage.setItem('arrobaUsuario', arroba);
     sessionStorage.setItem('imagemUsuario', imagem);
