@@ -10,15 +10,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <script src="./scripts/script.js" defer></script>
 </head>
 
 <body>
-    <script>
-        function abrirNovaPagina() {
-            window.location.href = '../pages/perfil.html';
-        }
-    </script>
-
     <div class="background-container">
         <img src="./images/background.png" alt="imagem de fundo com reciclagem">
     </div>
@@ -32,18 +27,19 @@
         <div class="box-container-inputs">
             <div>
                 <label for="name">Nome:</label>
-                <input type="text">
+                <input type="text" id="nomeUsuario">
             </div>
-
+        
             <div>
                 <label for="password">Senha:</label>
-                <input type="password">
-                <p>Esqueceu a senha?</p>
+                <input type="password" id="senhaUsuario">
+                <p>esqueceu a senha?</p>
+                <span id="mensagemErro" class="mensagem-erro"></span>
             </div>
         </div>
 
         <div class="box-container-button">
-            <button onclick="abrirNovaPagina()">Entrar</button>
+            <button onclick="realizarLogin()">Entrar</button>
         </div>
     </div>
 </body>
